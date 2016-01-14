@@ -46,7 +46,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .tab-label {
     width: 100%;
-    margin-top: 16px;
+    margin-top: 20px;
 }
 
     .tab-label h5 {
@@ -64,14 +64,15 @@ h1,h2,h3,h4,h5,h6 {
 
 .active-tab-text {
     color: #47A3DA;
+    margin-top: -2px;
 }
 
 .not-active-text {
-    color: #DDD;
+    color: #CCC;
 }
 
 .non-active-tab {
-    border: 1px solid #DDD;
+    border: 1px solid #CCC;
     border-bottom: 1px solid #47A3DA;
     display: inline-block;
     margin: 3px 3px;
@@ -81,12 +82,10 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .content-border {
-    width: 99%;
-    height: 400px;
+    width: 100%;
+    height: auto;
     margin: 0 auto;
-    border: 1px solid #47A3DA;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top: 1px solid #47A3DA;
     position: relative;
     z-index: 999;
 }
