@@ -89,3 +89,57 @@ h1,h2,h3,h4,h5,h6 {
     position: relative;
     z-index: 999;
 }
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+/* HOME PAGE */
+
+@media (max-width: 1200px){
+    
+    .tab-container {
+        height: 50px;
+    }
+    
+    .tab-label {
+        margin-top: 12px;
+    }   
+    
+    .tab {
+        width: 100px;
+    }
+}
+
+@media (max-width: 900px){
+    
+    .tab {
+        width: 80px;
+    }
+    
+    .tab-label {
+        margin-top: 14px;
+    }   
+    
+    .tab-label h5 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 730px){
+    
+    .tab-container {
+        height: 50px;
+    }
+    
+    .tab-label {
+        margin-top: 12px;
+    }
+      
+    .tab {
+        width: 100px;
+    }
+}
