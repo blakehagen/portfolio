@@ -90,6 +90,7 @@ a:visited {
     border-top: 1px solid #47A3DA;
     position: relative;
     z-index: 999;
+    min-height: 610px;
     /*border: 1px solid red;*/
 }
 
@@ -101,7 +102,7 @@ a:visited {
     text-align: center;
     position: relative;
     /*border: 1px solid red;*/
-    min-height: 610px;
+    /*min-height: 610px;*/
 }
 
 .content-container {
@@ -168,6 +169,7 @@ a:visited {
         color: #FFF;
         font-weight: 300;
         cursor: default;
+        letter-spacing: 0.5px;
     }
     
 .social-icons {
@@ -241,6 +243,65 @@ a:visited {
         width: 100%;
         border-radius: 50%;
     }
+    
+/* PROJECT VIEWS */
+
+.proj-container {
+    width: 1200px; 
+    /*text-align: center;*/
+}
+
+.col {
+    display: inline-block;
+    /*border: 1px solid red;*/
+    width: 48%;
+    
+}
+
+.proj-name {
+    width: 90%;
+    background: #47A3DA;
+    height: 60px;
+    text-align: center;
+}
+
+    .proj-name h2 {
+        color: #FFF;
+        line-height: 60px;
+        font-size: 40px;
+        font-weight: 100;
+    }
+    
+.proj-info {
+    margin-top: 20px;
+    width: 90%;
+    height: 80px;
+    background: #47A3DA;  
+}
+
+    .proj-info h3 {
+        color: #FFF;
+        font-weight: 100;
+        padding: 10px 10px 0px 20px;
+    }
+
+.proj-desc {
+    margin-top: 20px;
+    width: 90%;
+    height: auto;
+    background: #47A3DA;  
+}
+
+    .proj-desc h3 {
+        color: #FFF;
+        font-weight: 100;
+        padding: 20px;
+        line-height: 26px;
+    }
+
+
+
+
 
 
 /* MEDIA QUERIES */
@@ -428,3 +489,5 @@ a:visited {
         margin-bottom: 20px;
     }
 }
+
+/*  END MEDIA QUERIES HOME */
