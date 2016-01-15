@@ -25,10 +25,15 @@ h1,h2,h3,h4,h5,h6 {
 .tab-container {
     width: 100%;
     height: 70px;
-    /*border: 1px solid dodgerblue;*/
     text-align: center;
-    /*margin: 12px 0;*/
+    /*margin-bottom: -10px;*/
 }
+
+/*.row-split {
+    position: relative;
+    z-index: 9;
+    display: inline-block;
+}*/
 
 .tab {
     width: 140px;
@@ -71,20 +76,9 @@ h1,h2,h3,h4,h5,h6 {
     color: #CCC;
 }
 
-.non-active-tab {
-    border: 1px solid #CCC;
-    border-bottom: 1px solid #47A3DA;
-    display: inline-block;
-    margin: 3px 3px;
-    z-index: 99;
-    background: #FFF;
-    cursor: pointer;
-}
-
 .content-border {
     width: 100%;
     height: auto;
-    margin: 0 auto;
     border-top: 1px solid #47A3DA;
     position: relative;
     z-index: 999;
@@ -131,15 +125,80 @@ h1,h2,h3,h4,h5,h6 {
 
 @media (max-width: 730px){
     
-    .tab-container {
-        height: 50px;
+    .tab-text {
+        display: none;
     }
     
     .tab-label {
         margin-top: 12px;
     }
-      
-    .tab {
-        width: 100px;
+    
+    .tab-label h5 {
+        font-size: 20px;
     }
+    
+    .tab {
+        border: 1px solid #DDD;
+    }
+    
+    .content-border {
+        border-top: none;
+    }
+    
+    .active-tab {
+        border: 1px solid #47A3DA;
+        border-top: 1px solid #47A3DA;
+        border-bottom: 1px solid #47A3DA;
+    }
+    
+    .tab-container {
+        height: auto;
+        width: 375px;
+        /*border: 1px solid green;*/
+        margin: 0 auto;
+    }
+    
+    .active-tab-text {
+        margin-top: 0px;
+        line-height: 50px;
+    }
+    
+    .not-active-text {
+        margin-top: 0px;
+        line-height: 50px;
+    }
+    
+    .tab-label {
+        margin-top: 0;
+    }
+    
+    .tab {
+        margin-bottom: 8px;
+    }
+    
+}
+
+@media (max-width: 380px){
+    
+    .tab {
+        width: 55px;
+        height: 55px;
+    }
+    
+    .tab-container {
+        width: 285px;
+    }
+    
+    .active-tab-text {
+        line-height: 55px;
+    }
+    
+    .not-active-text {
+
+        line-height: 55px;
+    }
+ 
+ 
+ 
+    
 }
