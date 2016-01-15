@@ -13,7 +13,19 @@ html, body {
 h1,h2,h3,h4,h5,h6 {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
-    position: relative;
+}
+
+a {
+    text-decoration: none;
+    margin: 0;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
 }
 
 .home-header-container {
@@ -78,6 +90,7 @@ h1,h2,h3,h4,h5,h6 {
     border-top: 1px solid #47A3DA;
     position: relative;
     z-index: 999;
+    /*border: 1px solid red;*/
 }
 
 /* BIO VIEW */
@@ -88,6 +101,7 @@ h1,h2,h3,h4,h5,h6 {
     text-align: center;
     position: relative;
     /*border: 1px solid red;*/
+    min-height: 610px;
 }
 
 .content-container {
@@ -99,15 +113,15 @@ h1,h2,h3,h4,h5,h6 {
     bottom: 0;
     right: 0;
     width: 756px;
-    height: 500px;
+    height: 550px;
 }
 
 .rectangle {
     /*margin: 50px 25px 0 25px;*/
-    margin: 0 50px 0 0;
+    margin: 0 24px 0 0;
     display: inline-block;
     width: 350px;
-    height: 500px;
+    height: 550px;
     background: #47A3DA;
     text-align: center;
     vertical-align: top;
@@ -130,12 +144,27 @@ h1,h2,h3,h4,h5,h6 {
 .text-box {
     margin: 18px auto;
     /*border: 1px solid #FFF;*/
-    width: 250px;
+    width: 260px;
     text-align: center;
 }
 
+    .text-box h2 {
+        font-size: 34px;
+        color: #FFF;
+        font-weight: 300;
+        line-height: 42px;
+        cursor: default;
+    }
+    
     .text-box h4 {
-        font-size: 32px;
+        font-size: 22px;
+        color: #FFF;
+        font-weight: 300;
+        cursor: default;
+    }
+    
+    .text-box h6 {
+        font-size: 14px;
         color: #FFF;
         font-weight: 300;
         cursor: default;
@@ -153,6 +182,7 @@ h1,h2,h3,h4,h5,h6 {
     
     .social-icons .fa {
         margin: 0 17px 0 17px;
+        color: #FFF;
     }
     
 .no-fill {
@@ -162,18 +192,22 @@ h1,h2,h3,h4,h5,h6 {
 
 .sml-rectangle {
     width: 100%;
-    height: 225px;
+    height: 263px;
     background: #47A3DA;
-    margin: 0 0 50px 0;
-    padding-top: 20px;
+    margin: 0 0 24px 0;
+    padding-top: 24px;
     float: right;
+}
+
+.no-margin {
+    margin: 0;
 }
 
 .sml-img-container {
     border: 3px solid #FFF;
     border-radius: 50%;
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     text-align: center;
     margin: 0 auto -6px;
     display: inline-block;
@@ -181,17 +215,19 @@ h1,h2,h3,h4,h5,h6 {
 
     .sml-img-container .fa {
         color: #FFF;
-        line-height: 72px;
+        line-height: 82px;
         font-size: 44px;
     }
     
 .wide {
     width: 85%;
+    margin: 26px auto;
 }
     
 .text-box h5 {
     font-size: 14px;
     color: #FFF;
+    line-height: 22px;
     font-weight: 100;
     letter-spacing: 1px;
     cursor: default;
@@ -257,7 +293,7 @@ h1,h2,h3,h4,h5,h6 {
     }
     
     .sml-rectangle {
-        height: 248px;
+        height: 273px;
         margin-bottom: 4px;
     }
 }
@@ -293,7 +329,6 @@ h1,h2,h3,h4,h5,h6 {
     }
     
     .home-header-container {
-        width: 100%;
         height: 30px;
     }
     
@@ -320,6 +355,16 @@ h1,h2,h3,h4,h5,h6 {
     .tab {
         margin-bottom: 8px;
     } 
+    
+    .sml-img-container {
+        width: 77px;
+        height: 77px;
+    }
+    
+    .sml-img-container .fa {
+        line-height: 70px;
+    }
+    
 }
 
 @media (max-width: 630px){
@@ -352,7 +397,11 @@ h1,h2,h3,h4,h5,h6 {
 @media (max-width: 500px){
 
     .rectangle {
-        width: 95%;
+        width: 90%;
+    }
+    
+    .home-header-container {
+        height: 10px;
     }
 }
 
@@ -374,4 +423,8 @@ h1,h2,h3,h4,h5,h6 {
     .not-active-text {
         line-height: 55px;
     }  
+    
+    .no-margin {
+        margin-bottom: 20px;
+    }
 }
