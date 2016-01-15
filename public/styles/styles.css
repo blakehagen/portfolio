@@ -18,7 +18,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .home-header-container {
     width: 100%;
-    height: 25px;
+    height: 50px;
     /*border: 1px solid blue;*/
 }
 
@@ -77,6 +77,80 @@ h1,h2,h3,h4,h5,h6 {
     position: relative;
     z-index: 999;
 }
+
+/* BIO VIEW */
+
+.bio-wrapper {
+    /*border: 1px solid red;*/
+    width: 100%;
+    text-align: center;
+}
+
+.rectangle {
+    margin: 50px 25px 0 25px;
+    display: inline-block;
+    width: 350px;
+    height: 500px;
+    background: #47A3DA;
+    text-align: center;
+    vertical-align: top;
+}
+
+.bio-img-container {
+    border: 7px solid white;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    margin: 30px auto 0;
+}
+
+    .bio-img-container img {
+        width: 100%;
+        border-radius: 50%;
+    }
+    
+.text-box {
+    margin: 18px auto;
+    /*border: 1px solid #FFF;*/
+    width: 250px;
+    text-align: center;
+}
+
+    .text-box h4 {
+        font-size: 32px;
+        color: #FFF;
+        font-weight: 300;
+    }
+    
+.social-icons {
+    width: 100%;
+    text-align: center;
+}
+    
+    .social-icons h5 {
+        font-size: 24px;
+        color: #FFF;
+    }
+    
+    .social-icons .fa {
+        margin: 0 17px 0 17px;
+    }
+    
+.no-fill {
+    background: none;
+}
+
+.sml-rectangle {
+    width: 100%;
+    height: 224px;
+    background: #47A3DA;
+    margin: 0 0 50px 0;
+}
+
+    
+
+
+
 
 
 
@@ -188,7 +262,6 @@ h1,h2,h3,h4,h5,h6 {
     }
     
     .not-active-text {
-
         line-height: 55px;
     }  
 }
