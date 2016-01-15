@@ -4,7 +4,7 @@ angular.module('portfolio', ['ui.router']).config(function ($stateProvider, $url
         .state('home', {
             url: '/',
             templateUrl: './features/home/homeTmpl.html',
-            controller: 'homeCtrl'
+            controller: 'homeCtrl as home'
         })
 
     $urlRouterProvider

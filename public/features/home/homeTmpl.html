@@ -1,56 +1,70 @@
+
+
+
+<div class="tab-container">
+    <div ng-repeat="tab in home.tabs" class="tab" ng-class="home.selectedTab === tab.code ? 'active-tab' : ''" ng-click="home.toggleTab(tab.code)">
+        <div class="tab-label">
+            <h5 ng-class="home.selectedTab === tab.code ? 'active-tab-text' : 'not-active-text'"><i class="fa fa-home fa-lg"></i><span class="tab-text">&nbsp;&nbsp;{{tab.code.toUpperCase()}}</span></h5>
+        </div>
+    </div>
+</div>
+
+
+
+
 <div class="home-header-container">
 </div>
 
 <div class="tab-container">
-    <div class="tab" ng-class="activeTab1 ? 'active-tab' : ''" ng-click="toggleTab1()">
+    <div class="tab" ng-class="home.activeTab1 ? 'active-tab' : ''" ng-click="home.toggleTab1()">
         <div class="tab-label">
-            <h5 ng-class="activeTab1 ? 'active-tab-text' : 'not-active-text'"><i class="fa fa-home fa-lg"></i><span class="tab-text">&nbsp;&nbsp;BIO</span></h5>
+            <h5 ng-class="home.activeTab1 ? 'active-tab-text' : 'not-active-text'"><i class="fa fa-home fa-lg"></i><span class="tab-text">&nbsp;&nbsp;BIO</span></h5>
         </div>
     </div>
-    <div class="tab" ng-class="activeTab2 ? 'active-tab' : ''" ng-click="toggleTab2()">
+    <div class="tab" ng-class="home.activeTab2 ? 'active-tab' : ''" ng-click="home.toggleTab2()">
         <div class="tab-label">
-            <h5 ng-class="activeTab2 ? 'active-tab-text' : 'not-active-text'"><i class="fa fa-users"></i><span class="tab-text">&nbsp;&nbsp;GS</span></h5>
+            <h5 ng-class="home.activeTab2 ? 'active-tab-text' : 'not-active-text'"><i class="fa fa-users"></i><span class="tab-text">&nbsp;&nbsp;GS</span></h5>
         </div>
     </div>
-    <div class="tab" ng-class="activeTab3 ? 'active-tab' : ''" ng-click="toggleTab3()">
+    <div class="tab" ng-class="home.activeTab3 ? 'active-tab' : ''" ng-click="home.toggleTab3()">
         <div class="tab-label">
-            <h5 ng-class="activeTab3 ? 'active-tab-text' : 'not-active-text'"><i class="fa fa-futbol-o"></i><span class="tab-text">&nbsp;&nbsp;FW</span></h5>
+            <h5 ng-class="home.activeTab3 ? 'active-tab-text' : 'not-active-text'"><i class="fa fa-futbol-o"></i><span class="tab-text">&nbsp;&nbsp;FW</span></h5>
         </div>
     </div>
-    <div class="tab" ng-class="activeTab4 ? 'active-tab' : ''" ng-click="toggleTab4()">
+    <div class="tab" ng-class="home.activeTab4 ? 'active-tab' : ''" ng-click="home.toggleTab4()">
         <div class="tab-label">
-            <h5 ng-class="activeTab4 ? 'active-tab-text' : 'not-active-text'"><i class="fa fa-check-square-o"></i><span class="tab-text">&nbsp;&nbsp;TC</span></h5>
+            <h5 ng-class="home.activeTab4 ? 'active-tab-text' : 'not-active-text'"><i class="fa fa-check-square-o"></i><span class="tab-text">&nbsp;&nbsp;TC</span></h5>
         </div>
     </div>
-    <div class="tab" ng-class="activeTab5 ? 'active-tab' : ''" ng-click="toggleTab5()">
+    <div class="tab" ng-class="home.activeTab5 ? 'active-tab' : ''" ng-click="home.toggleTab5()">
         <div class="tab-label">
-            <h5 ng-class="activeTab5 ? 'active-tab-text' : 'not-active-text'"><i class="fa fa-map-o"></i><span class="tab-text">&nbsp;&nbsp;LC</span></h5>
+            <h5 ng-class="home.activeTab5 ? 'active-tab-text' : 'not-active-text'"><i class="fa fa-map-o"></i><span class="tab-text">&nbsp;&nbsp;LC</span></h5>
         </div>
     </div>
-    <div class="tab" ng-class="activeTab6 ? 'active-tab' : ''" ng-click="toggleTab6()">
+    <div class="tab" ng-class="home.activeTab6 ? 'active-tab' : ''" ng-click="home.toggleTab6()">
         <div class="tab-label">
-            <h5 ng-class="activeTab6 ? 'active-tab-text' : 'not-active-text'"><i class="fa fa-cutlery"></i><span class="tab-text">&nbsp;&nbsp;FTF</span></h5>
+            <h5 ng-class="home.activeTab6 ? 'active-tab-text' : 'not-active-text'"><i class="fa fa-cutlery"></i><span class="tab-text">&nbsp;&nbsp;FTF</span></h5>
         </div>
     </div>
-    <div class="tab" ng-class="activeTab7 ? 'active-tab' : ''" ng-click="toggleTab7()">
+    <div class="tab" ng-class="home.activeTab7 ? 'active-tab' : ''" ng-click="home.toggleTab7()">
         <div class="tab-label">
-            <h5 ng-class="activeTab7 ? 'active-tab-text' : 'not-active-text'"><i class="fa fa-usd"></i><span class="tab-text">&nbsp;B</span></h5>
+            <h5 ng-class="home.activeTab7 ? 'active-tab-text' : 'not-active-text'"><i class="fa fa-usd"></i><span class="tab-text">&nbsp;B</span></h5>
         </div>
     </div>
-    <div class="tab" ng-class="activeTab8 ? 'active-tab' : ''" ng-click="toggleTab8()">
+    <div class="tab" ng-class="home.activeTab8 ? 'active-tab' : ''" ng-click="home.toggleTab8()">
         <div class="tab-label">
-            <h5 ng-class="activeTab8 ? 'active-tab-text' : 'not-active-text'"><i class="fa fa-heart-o"></i><span class="tab-text">&nbsp;&nbsp;F</span></h5>
+            <h5 ng-class="home.activeTab8 ? 'active-tab-text' : 'not-active-text'"><i class="fa fa-heart-o"></i><span class="tab-text">&nbsp;&nbsp;F</span></h5>
         </div>
     </div>
 </div>
 
 <div class="content-border">
-    <bio-directive ng-show="bio"></bio-directive>
-    <gs-directive ng-show="gs"></gs-directive>
-    <fw-directive ng-show="futbol"></fw-directive>
-    <tc-directive ng-show="tc"></tc-directive>
+    <bio-directive ng-show="home.bio"></bio-directive>
+    <!--<gs-directive ng-show="gs"></gs-directive>-->
+    <fw-directive ng-show="home.futbol"></fw-directive>
+    <!--<tc-directive ng-show="tc"></tc-directive>
     <lc-directive ng-show="lc"></lc-directive>
     <ftf-directive ng-show="food"></ftf-directive>
     <blackjack-directive ng-show="blackjack"></blackjack-directive>
-    <fit-directive ng-show="fit"></fit-directive>
+    <fit-directive ng-show="fit"></fit-directive>-->
 </div>

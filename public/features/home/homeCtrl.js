@@ -1,191 +1,208 @@
-angular.module('portfolio').controller('homeCtrl', function ($scope) {
+angular.module('portfolio').controller('homeCtrl', function () {
+
+    var home = this;
+
+    home.selectedTab = 'bio';
+
+    home.tabs = [
+        { code: 'bio' },
+        { code: 'gs' }
+
+    ];
+    
+    home.toggleTab = function(tabCode){
+        home.selectedTab = tabCode;
+        
+    }
+    
+    
 
     // TAB TOGGLES //
-    $scope.activeTab1 = true;
-    $scope.activeTab2 = false;
-    $scope.activeTab3 = false;
-    $scope.activeTab4 = false;
-    $scope.activeTab5 = false;
-    $scope.activeTab6 = false;
-    $scope.activeTab7 = false;
-    $scope.activeTab8 = false;
+    home.activeTab1 = true;
+    home.activeTab2 = false;
+    home.activeTab3 = false;
+    home.activeTab4 = false;
+    home.activeTab5 = false;
+    home.activeTab6 = false;
+    home.activeTab7 = false;
+    home.activeTab8 = false;
 
-    $scope.bio = true;
-    $scope.blackjack = false;
-    $scope.food = false;
-    $scope.fit = false;
-    $scope.futbol = false;
-    $scope.gs = false;
-    $scope.lc = false;
-    $scope.tc = false;
+    home.bio = true;
+    home.blackjack = false;
+    home.food = false;
+    home.fit = false;
+    home.futbol = false;
+    home.gs = false;
+    home.lc = false;
+    home.tc = false;
 
 
     // TAB 1 - BIO //
-    $scope.toggleTab1 = function () {
-        $scope.activeTab1 = true;
-        $scope.activeTab2 = false;
-        $scope.activeTab3 = false;
-        $scope.activeTab4 = false;
-        $scope.activeTab5 = false;
-        $scope.activeTab6 = false;
-        $scope.activeTab7 = false;
-        $scope.activeTab8 = false;
+    home.toggleTab1 = function () {
+        home.activeTab1 = true;
+        home.activeTab2 = false;
+        home.activeTab3 = false;
+        home.activeTab4 = false;
+        home.activeTab5 = false;
+        home.activeTab6 = false;
+        home.activeTab7 = false;
+        home.activeTab8 = false;
 
-        $scope.bio = true;
-        $scope.gs = false;
-        $scope.futbol = false;
-        $scope.tc = false;
-        $scope.lc = false;
-        $scope.food = false;
-        $scope.blackjack = false;
-        $scope.fit = false;
+        home.bio = true;
+        home.gs = false;
+        home.futbol = false;
+        home.tc = false;
+        home.lc = false;
+        home.food = false;
+        home.blackjack = false;
+        home.fit = false;
     }
     
     // TAB 2 - GROOPSCOOP //
-    $scope.toggleTab2 = function () {
-        $scope.activeTab1 = false;
-        $scope.activeTab2 = true;
-        $scope.activeTab3 = false;
-        $scope.activeTab4 = false;
-        $scope.activeTab5 = false;
-        $scope.activeTab6 = false;
-        $scope.activeTab7 = false;
-        $scope.activeTab8 = false;
+    home.toggleTab2 = function () {
+        home.activeTab1 = false;
+        home.activeTab2 = true;
+        home.activeTab3 = false;
+        home.activeTab4 = false;
+        home.activeTab5 = false;
+        home.activeTab6 = false;
+        home.activeTab7 = false;
+        home.activeTab8 = false;
 
-        $scope.bio = false;
-        $scope.gs = true;
-        $scope.futbol = false;
-        $scope.tc = false;
-        $scope.lc = false;
-        $scope.food = false;
-        $scope.blackjack = false;
-        $scope.fit = false;
+        home.bio = false;
+        home.gs = true;
+        home.futbol = false;
+        home.tc = false;
+        home.lc = false;
+        home.food = false;
+        home.blackjack = false;
+        home.fit = false;
     }
     
     // TAB 3 - FUTBOLWATCH //
-    $scope.toggleTab3 = function () {
-        $scope.activeTab1 = false;
-        $scope.activeTab2 = false;
-        $scope.activeTab3 = true;
-        $scope.activeTab4 = false;
-        $scope.activeTab5 = false;
-        $scope.activeTab6 = false;
-        $scope.activeTab7 = false;
-        $scope.activeTab8 = false;
+    home.toggleTab3 = function () {
+        home.activeTab1 = false;
+        home.activeTab2 = false;
+        home.activeTab3 = true;
+        home.activeTab4 = false;
+        home.activeTab5 = false;
+        home.activeTab6 = false;
+        home.activeTab7 = false;
+        home.activeTab8 = false;
 
-        $scope.bio = false;
-        $scope.gs = false;
-        $scope.futbol = true;
-        $scope.tc = false;
-        $scope.lc = false;
-        $scope.food = false;
-        $scope.blackjack = false;
-        $scope.fit = false;
+        home.bio = false;
+        home.gs = false;
+        home.futbol = true;
+        home.tc = false;
+        home.lc = false;
+        home.food = false;
+        home.blackjack = false;
+        home.fit = false;
     }
     
     // TAB 4 - TASKCHECKR //
-    $scope.toggleTab4 = function () {
-        $scope.activeTab1 = false;
-        $scope.activeTab2 = false;
-        $scope.activeTab3 = false;
-        $scope.activeTab4 = true;
-        $scope.activeTab5 = false;
-        $scope.activeTab6 = false;
-        $scope.activeTab7 = false;
-        $scope.activeTab8 = false;
+    home.toggleTab4 = function () {
+        home.activeTab1 = false;
+        home.activeTab2 = false;
+        home.activeTab3 = false;
+        home.activeTab4 = true;
+        home.activeTab5 = false;
+        home.activeTab6 = false;
+        home.activeTab7 = false;
+        home.activeTab8 = false;
 
-        $scope.bio = false;
-        $scope.gs = false;
-        $scope.futbol = false;
-        $scope.tc = true;
-        $scope.lc = false;
-        $scope.food = false;
-        $scope.blackjack = false;
-        $scope.fit = false;
+        home.bio = false;
+        home.gs = false;
+        home.futbol = false;
+        home.tc = true;
+        home.lc = false;
+        home.food = false;
+        home.blackjack = false;
+        home.fit = false;
     }
     
     // TAB 5 - LOCATIONCHECKR //
-    $scope.toggleTab5 = function () {
-        $scope.activeTab1 = false;
-        $scope.activeTab2 = false;
-        $scope.activeTab3 = false;
-        $scope.activeTab4 = false;
-        $scope.activeTab5 = true;
-        $scope.activeTab6 = false;
-        $scope.activeTab7 = false;
-        $scope.activeTab8 = false;
+    home.toggleTab5 = function () {
+        home.activeTab1 = false;
+        home.activeTab2 = false;
+        home.activeTab3 = false;
+        home.activeTab4 = false;
+        home.activeTab5 = true;
+        home.activeTab6 = false;
+        home.activeTab7 = false;
+        home.activeTab8 = false;
 
-        $scope.bio = false;
-        $scope.gs = false;
-        $scope.futbol = false;
-        $scope.tc = false;
-        $scope.lc = true;
-        $scope.food = false;
-        $scope.blackjack = false;
-        $scope.fit = false;
+        home.bio = false;
+        home.gs = false;
+        home.futbol = false;
+        home.tc = false;
+        home.lc = true;
+        home.food = false;
+        home.blackjack = false;
+        home.fit = false;
     }
     
     // TAB 6 - FOOD TRUCK FINDER //
-    $scope.toggleTab6 = function () {
-        $scope.activeTab1 = false;
-        $scope.activeTab2 = false;
-        $scope.activeTab3 = false;
-        $scope.activeTab4 = false;
-        $scope.activeTab5 = false;
-        $scope.activeTab6 = true;
-        $scope.activeTab7 = false;
-        $scope.activeTab8 = false;
+    home.toggleTab6 = function () {
+        home.activeTab1 = false;
+        home.activeTab2 = false;
+        home.activeTab3 = false;
+        home.activeTab4 = false;
+        home.activeTab5 = false;
+        home.activeTab6 = true;
+        home.activeTab7 = false;
+        home.activeTab8 = false;
 
-        $scope.bio = false;
-        $scope.gs = false;
-        $scope.futbol = false;
-        $scope.tc = false;
-        $scope.lc = false;
-        $scope.food = true;
-        $scope.blackjack = false;
-        $scope.fit = false;
+        home.bio = false;
+        home.gs = false;
+        home.futbol = false;
+        home.tc = false;
+        home.lc = false;
+        home.food = true;
+        home.blackjack = false;
+        home.fit = false;
     }
 
     // TAB 7 - BLACKJACK //
-    $scope.toggleTab7 = function () {
-        $scope.activeTab1 = false;
-        $scope.activeTab2 = false;
-        $scope.activeTab3 = false;
-        $scope.activeTab4 = false;
-        $scope.activeTab5 = false;
-        $scope.activeTab6 = false;
-        $scope.activeTab7 = true;
-        $scope.activeTab8 = false;
+    home.toggleTab7 = function () {
+        home.activeTab1 = false;
+        home.activeTab2 = false;
+        home.activeTab3 = false;
+        home.activeTab4 = false;
+        home.activeTab5 = false;
+        home.activeTab6 = false;
+        home.activeTab7 = true;
+        home.activeTab8 = false;
 
-        $scope.bio = false;
-        $scope.gs = false;
-        $scope.futbol = false;
-        $scope.tc = false;
-        $scope.lc = false;
-        $scope.food = false;
-        $scope.blackjack = true;
-        $scope.fit = false;
+        home.bio = false;
+        home.gs = false;
+        home.futbol = false;
+        home.tc = false;
+        home.lc = false;
+        home.food = false;
+        home.blackjack = true;
+        home.fit = false;
     }
 
     // TAB 7 - FITSTANTLY //
-    $scope.toggleTab8 = function () {
-        $scope.activeTab1 = false;
-        $scope.activeTab2 = false;
-        $scope.activeTab3 = false;
-        $scope.activeTab4 = false;
-        $scope.activeTab5 = false;
-        $scope.activeTab6 = false;
-        $scope.activeTab7 = false;
-        $scope.activeTab8 = true;
+    home.toggleTab8 = function () {
+        home.activeTab1 = false;
+        home.activeTab2 = false;
+        home.activeTab3 = false;
+        home.activeTab4 = false;
+        home.activeTab5 = false;
+        home.activeTab6 = false;
+        home.activeTab7 = false;
+        home.activeTab8 = true;
 
-        $scope.bio = false;
-        $scope.gs = false;
-        $scope.futbol = false;
-        $scope.tc = false;
-        $scope.lc = false;
-        $scope.food = false;
-        $scope.blackjack = false;
-        $scope.fit = true;
+        home.bio = false;
+        home.gs = false;
+        home.futbol = false;
+        home.tc = false;
+        home.lc = false;
+        home.food = false;
+        home.blackjack = false;
+        home.fit = true;
     }
 
 
