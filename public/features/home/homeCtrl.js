@@ -10,7 +10,7 @@ angular.module('portfolio').controller('homeCtrl', function ($sanitize, projServ
         },
         
         {   code: 'gs',
-            project_name: ''
+            icon:  '<i class="fa fa-group"></i>',
          },
          
         {   code: 'fw',
@@ -39,10 +39,14 @@ angular.module('portfolio').controller('homeCtrl', function ($sanitize, projServ
     ];
     
     home.toggleTab = function (tabCode) {
-        home.selectedTab = tabCode; 
-        home.projectData = projService.getProjectData(home.selectedTab);
-        console.log(home.projectData);
-
+        home.projectData ='';
+        home.selectedTab = tabCode;
+         home.getThisProject(); 
+        
     }
 
+    home.getThisProject = function(){
+       home.projectData = projService.getProjectData(home.selectedTab);
+    }
+    
 });

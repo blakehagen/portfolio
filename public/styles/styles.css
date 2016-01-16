@@ -255,26 +255,34 @@ a:visited {
 /* PROJECT VIEWS */
 
 .proj-container {
-    width: 1200px; 
-    /*text-align: center;*/
+    width: 1100px; 
+    text-align: center;
+    /*border: 1px solid rebeccapurple;*/
 }
 
 .col {
     display: inline-block;
-    /*border: 1px solid red;*/
-    width: 48%;
+    /*border: 1px solid red; */
+    width: 46%;
+    margin-right: 20px;
+    vertical-align: top;
+}
+
+.right-col {
+    margin-right: 0px;
+    
 }
 
 .proj-name {
-    width: 90%;
+    width: 100%;
     background: #47A3DA;
-    height: 60px;
+    height: 68px;
     text-align: center;
 }
 
     .proj-name h2 {
         color: #FFF;
-        line-height: 60px;
+        line-height: 67px;
         font-size: 40px;
         font-weight: 100;
         cursor: default;
@@ -282,21 +290,29 @@ a:visited {
     
 .proj-info {
     margin-top: 20px;
-    width: 90%;
-    height: 80px;
+    padding: 5px 0;
+    width: 100%;
+    height: auto;
     background: #47A3DA;  
 }
 
-    .proj-info h3 {
-        color: #FFF;
-        font-weight: 100;
-        padding: 10px 10px 0px 20px;
-        cursor: default;
-    }
+.proj-info h3 {
+    font-size: 18px;
+    color: #FFF;
+    font-weight: 100;
+    line-height: 30px;
+    padding: 0px 0px 0px 20px;
+    cursor: default;
+    text-align: left;
+}
+
+.info-bottom {
+    padding: 0;
+}
 
 .proj-desc {
     margin-top: 20px;
-    width: 90%;
+    width: 100%;
     height: auto;
     background: #47A3DA;  
 }
@@ -307,11 +323,22 @@ a:visited {
         padding: 20px;
         line-height: 26px;
         cursor: default;
+        text-align: left;
     }
+    
+.proj-img-container {
+    width: 100%;
+    margin-bottom: 20px;
+}
 
+.proj-img-container-bottom {
+    margin-bottom: 0px;
+}
 
-
-
+    .proj-img-container img {
+        width: 100%;
+        border: 10px solid #47A3DA;
+    }
 
 
 /* MEDIA QUERIES */
@@ -501,6 +528,63 @@ a:visited {
 }
 
 /*  END MEDIA QUERIES HOME */
+
+/* MEDIA QUERIES PROJECT VIEW */
+
+@media (max-width: 1100px){
+    
+    .proj-name h2 {
+        font-size: 34px;
+    }
+    
+    .proj-container {
+       width: 95%;
+    } 
+    
+    .proj-info {
+        height: auto;
+    }
+    
+    .proj-info h3 {
+        font-size: 16px;
+    }
+    
+    .proj-desc h3 {
+        font-size: 16px;
+    }
+    
+    .col {
+        width: 47%;
+    }
+}
+
+@media (max-width: 1000px){
+    
+    .proj-container {
+        margin-top: 20px;
+        height: auto;
+    }
+}
+
+@media (max-width: 950px){
+    
+    .col {
+        width: 90%;
+        margin: 0 0 20px 0;
+    }
+    
+    .proj-img-container-bottom {
+        margin-bottom: 20px;    
+    }
+}
+
+@media (max-width: 700px){
+    
+    .col {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+}
 
 
 
