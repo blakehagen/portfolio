@@ -1,19 +1,18 @@
 <div class="content-container proj-container">
     <div class="col">
         <div class="proj-name">
-            <h2><i class="fa fa-futbol-o"></i>&nbsp;&nbsp;F&uacute;tbol Watch</h2>
+            <h2><span ng-bind-html="home.projectData.icon"></span>&nbsp;&nbsp;{{home.projectData.project_name}}</h2>
         </div>
         <div class="proj-info">
-            <h3>Live App:&nbsp;&nbsp;&nbsp; http://futbolwatch.com/</h3>
-            <h3>Code:&nbsp;&nbsp;&nbsp; https://github.com/blakehagen/futbolwatch</h3>
+            <h3>Live App:&nbsp;&nbsp;&nbsp; <a ng-href="{{home.projectData.live_url}}" target="_blank">{{home.projectData.live_url}}</a></h3>
+            <h3>Code:&nbsp;&nbsp;&nbsp; <a ng-href="{{home.projectData.source_code_url}}" target="_blank">{{home.projectData.source_code_url}}</a></h3>
         </div>
         <div class="proj-desc">
-            <h3>Stay up to date with information from your favorite European soccer leagues. See up-to-date league standings, upcoming fixtures, results, and leading goal scorers for the English Premier League, German Bundesliga, Spanish Primera Dvision, Dutch Eredivisie, Italian Serie A, Portugal Primeira, France Ligue 1, and the UEFA Champions League.</h3>
+            <h3>{{home.projectData.description}}</h3>
         </div>
         <div class="proj-desc">
-            <h3>Built with AngularJS, CSS, HTML. Also built a proxy server with Node.js and Express to make API calls to gather soccer data for the application.</h3>
+            <h3>{{home.projectData.tech}}</h3>
         </div>
-
     </div>
 
     <div class="col">
