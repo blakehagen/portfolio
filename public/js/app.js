@@ -1,4 +1,4 @@
-angular.module('portfolio', ['ui.router']).config(function ($stateProvider, $urlRouterProvider) {
+angular.module('portfolio', ['ui.router', 'ngSanitize']).config(function ($stateProvider, $urlRouterProvider) {
 
     $stateProvider
         .state('home', {
