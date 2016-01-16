@@ -1,4 +1,4 @@
-angular.module('portfolio').controller('homeCtrl', function ($sce) {
+angular.module('portfolio').controller('homeCtrl', function ($sanitize) {
 
     var home = this;
 
@@ -6,7 +6,12 @@ angular.module('portfolio').controller('homeCtrl', function ($sce) {
 
     home.tabs = [
         { code: 'bio', 
-          icon:  '<i class="fa fa-home fa-lg"></i>'
+          icon:  '<i class="fa fa-home fa-lg"></i>',
+          live_url: '',
+          source_code_url: '',
+          description: '',
+          tech: '',
+          img_urls: ['', '', '', '']
         },
         
         { code: 'gs',
