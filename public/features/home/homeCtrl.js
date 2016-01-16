@@ -16,14 +16,14 @@ angular.module('portfolio').controller('homeCtrl', function ($sanitize, projServ
         {   code: 'fw',
             icon: '<i class="fa fa-futbol-o"></i>'
           },
+          
+        {   code: 'lc',
+            icon: '<i class="fa fa-map-o"></i>'
+          },
         
         {   code: 'tc',
             icon: '<i class="fa fa-check-square-o"></i>'
         },
-        
-        {   code: 'lc',
-            icon: '<i class="fa fa-map-o"></i>'
-          },
         
         {   code: 'ftf',
             icon: '<i class="fa fa-cutlery"></i>'

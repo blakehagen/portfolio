@@ -21,7 +21,7 @@ angular.module('portfolio').service('projService', function ($q) {
                 source_code_url: 'https://goo.gl/lzkaRS',
                 description: '',
                 tech: '',
-                img_urls: ['', '', '', '']
+                img_urls: ['/styles/assets/screenshots/gs/gs1.jpg', '/styles/assets/screenshots/gs/gs2.jpg']
             }
         }
         else if (projectCode === 'tc') {
@@ -32,7 +32,7 @@ angular.module('portfolio').service('projService', function ($q) {
                 source_code_url: 'https://goo.gl/P1xdze',
                 description: '',
                 tech: '',
-                img_urls: ['', '', '', '']
+                img_urls: ['/styles/assets/screenshots/tc/tc1.jpg', '/styles/assets/screenshots/tc/tc2.jpg']
             }
         }
         else if (projectCode === 'lc') {
@@ -43,7 +43,7 @@ angular.module('portfolio').service('projService', function ($q) {
                 source_code_url: 'https://goo.gl/tc1Ah5',
                 description: '',
                 tech: '',
-                img_urls: ['', '', '', '']
+                img_urls: ['/styles/assets/screenshots/lc/lc1.jpg', '/styles/assets/screenshots/lc/lc2.jpg']
             }
         }
         else if (projectCode === 'ftf') {
@@ -54,7 +54,7 @@ angular.module('portfolio').service('projService', function ($q) {
                 source_code_url: 'https://goo.gl/UNY6dQ',
                 description: '',
                 tech: '',
-                img_urls: ['', '', '', '']
+                img_urls: ['/styles/assets/screenshots/ftf/ftf1.jpg', '/styles/assets/screenshots/ftf/ftf2.jpg']
             }
         }
         else if (projectCode === 'b') {
@@ -65,7 +65,7 @@ angular.module('portfolio').service('projService', function ($q) {
                 source_code_url: 'https://goo.gl/tkom3C',
                 description: '',
                 tech: '',
-                img_urls: ['', '', '', '']
+                img_urls: ['/styles/assets/screenshots/b/b1.jpg', '/styles/assets/screenshots/b/b2.jpg']
             }
         }
          else if (projectCode === 'f') {
@@ -76,7 +76,7 @@ angular.module('portfolio').service('projService', function ($q) {
                 source_code_url: 'https://goo.gl/jfpbtf',
                 description: '',
                 tech: '',
-                img_urls: ['', '', '', '']
+                img_urls: ['/styles/assets/screenshots/f/f1.jpg', '/styles/assets/screenshots/f/f2.jpg']
             }
         }
     }
