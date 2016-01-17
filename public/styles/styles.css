@@ -32,6 +32,15 @@ a:hover {
     text-decoration: underline;
 }
 
+.proj-desc a {
+    color: #FFF;
+    text-decoration: underline;
+}
+
+.proj-desc a:hover {
+    color: #eee;
+}
+
 a:visited {
     text-decoration: none;
 }
