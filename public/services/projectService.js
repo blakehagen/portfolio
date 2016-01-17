@@ -47,7 +47,7 @@ angular.module('portfolio').service('projService', function ($q) {
                 icon: '<i class="fa fa-map-o"></i>',
                 live_url: 'http://locationcheckr.com/',
                 source_code_url: 'https://goo.gl/tc1Ah5',
-                description: 'Map your current location and see locations of other locationCheckr users you have connected with. You can decide to share or stop sharing your locations with the click of a button.',
+                description: 'Map your current location and see locations of other locationCheckr users you have connected with. You can decide to share or stop sharing your location with the click of a button.',
                 tech: 'Learned to use the Google Maps API with this project. Learned geolocation and Google Maps reverse geolocation. Real-time map updates with Socket.io. Built on Angular, Node, Express, Mongoose, & MongoDB. User authentication with Passport.',
                 img_urls: ['/styles/assets/screenshots/lc/lc1.jpg', '/styles/assets/screenshots/lc/lc2.jpg'],
                 built: 'December 2015'
