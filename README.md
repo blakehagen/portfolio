@@ -1,5 +1,4 @@
-Personal Portfolio
-January 2016
+Personal Portfoli0 - January 2016
 
 <a href="http://blakehagen.io" target="_blank">http://blakehagen.io</a>
 
