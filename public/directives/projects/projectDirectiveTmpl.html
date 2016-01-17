@@ -1,22 +1,20 @@
 <div class="content-container proj-container">
     <div class="col">
         <div class="proj-name">
-            <h2><span ng-bind-html="home.projectData.icon"></span>&nbsp;&nbsp;{{home.projectData.project_name}}</h2>
+            <h2><span ng-bind-html="home.projectData.icon"></span>&nbsp;&nbsp; {{home.projectData.project_name}}</h2>
         </div>
         <div class="proj-info">
-            <h3><span id="bolder">Live App:</span>&nbsp;&nbsp;<a ng-href="{{home.projectData.live_url}}" target="_blank">{{home.projectData.live_url}}</a></h3>
+            <h3><span id="bolder">Live App:</span>&nbsp;&nbsp; <a ng-href="{{home.projectData.live_url}}" target="_blank">{{home.projectData.live_url}}</a></h3>
             <h3 class="info-bottom"><span id="bolder">GitHub Repo:</span>&nbsp;&nbsp;<a ng-href="{{home.projectData.source_code_url}}" target="_blank">{{home.projectData.source_code_url}}</a></h3>
-             <h3><span id="bolder">Built:</span>&nbsp;&nbsp;{{home.projectData.built}}</h3>
+             <h3><span id="bolder">Built:</span>&nbsp;&nbsp; {{home.projectData.built}}</h3>
         </div>
         <div class="proj-desc">
             <h3>{{home.projectData.description}}</h3>
         </div>
         <div class="proj-desc">
-            <!--<h3>{{home.projectData.tech}}</h3>-->
             <h3><span ng-bind-html="home.projectData.tech"></h3>
         </div>
     </div>
-
     <div class="col right-col ">
         <div class="proj-img-container">
             <img ng-src="{{home.projectData.img_urls[0]}}" alt="Screenshot">
@@ -24,11 +22,5 @@
         <div class="proj-img-container proj-img-container-bottom">
             <img ng-src="{{home.projectData.img_urls[1]}}" alt="Screenshot 2">
         </div>
-
     </div>
-
-
-
-
-
 </div>

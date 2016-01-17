@@ -41,8 +41,7 @@ angular.module('portfolio').controller('homeCtrl', function ($sanitize, projServ
     home.toggleTab = function (tabCode) {
         home.projectData ='';
         home.selectedTab = tabCode;
-         home.getThisProject(); 
-        
+        home.getThisProject(); 
     }
 
     home.getThisProject = function(){
