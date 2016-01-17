@@ -293,7 +293,7 @@ a:visited {
         color: #FFF;
         line-height: 67px;
         font-size: 38px;
-        font-weight: 100;
+        font-weight: 400;
         cursor: default;
     }
     
@@ -313,6 +313,10 @@ a:visited {
     padding: 0px 0px 0px 20px;
     cursor: default;
     text-align: left;
+}
+
+#bolder {
+    font-weight: 800;
 }
 
 .info-bottom {
@@ -590,12 +594,20 @@ a:visited {
 @media (max-width: 700px){
     
     .col {
-        width: 100%;
+        width: 98%;
         margin: 0 0 20px 0;
     }
 }
 
-
-
+@media (max-width: 400px){
+    
+    .proj-name h2 {
+        font-size: 28px;
+    }
+    
+    .proj-name {
+        height: auto;
+    }
+}
 
 
