@@ -10,7 +10,7 @@ app.use(express.static('./public'));
 
 
 
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 80;
 app.listen(port, function () {
     console.log('listening on port ' + port);
 });
