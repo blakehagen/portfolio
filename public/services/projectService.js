@@ -8,7 +8,7 @@ angular.module('portfolio').service('projService', function ($q) {
                 icon: '<i class="fa fa-futbol-o"></i>',
                 live_url: 'http://futbolwatch.com/',
                 source_code_url: 'https://goo.gl/ONpAhj',
-                description: 'Stay up to date with information from top European soccer leagues. See league standings, upcoming fixtures, results, and leading goal scorers for the English Premier League, German Bundesliga, Spanish Primera Dvision, UEFA Champions League, & others.',
+                description: 'Stay up to date with information from top European soccer leagues. See league standings, upcoming fixtures, results, and leading goal scorers for the English Premier League, German Bundesliga, Spanish Primera Division, UEFA Champions League, & more.',
                 tech: 'Built with AngularJS, CSS, HTML. JavaScript used to maniputlate data to display. Also built a separate server with Node.js and Express to make API calls to gather soccer data for the application.',
                 img_urls: ['/styles/assets/screenshots/fw/fw1.jpg', '/styles/assets/screenshots/fw/fw2.jpg'],
                 built: 'November 2015'
