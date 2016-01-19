@@ -62,7 +62,7 @@ angular.module('portfolio').service('projService', function ($q) {
                 source_code_url: 'https://goo.gl/UNY6dQ',
                 description: 'Mobile application (available on iOS and Android) displaying food trucks near your current location.',
                 tech: '<a href="https://devmounta.in/" target="_blank">DevMountain</a> group project built using Ionic. Worked with 4 other team members. Learned Ionic outside of DevMountain class time. My responsibilities included incorporating the Google Maps API, real-time truck location sharing using Socket.io, & overall troubleshooting and bug fixing across multiple parts of the project. Learned GitHub in a team setting.',
-                img_urls: ['/styles/assets/screenshots/ftf/ftf1.jpg', '/styles/assets/screenshots/ftf/ftf2.jpg'],
+                img_urls: ['/styles/assets/screenshots/ftf/ftf-1.jpg', ''],
                 built: 'January 2016'
             }
         }
