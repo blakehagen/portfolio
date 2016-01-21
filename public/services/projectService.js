@@ -23,7 +23,7 @@ angular.module('portfolio').service('projService', function ($q) {
                 source_code_url: 'https://goo.gl/lzkaRS',
                 description: 'GroopScoop is a real-time group chat/forum application. Log in with Google, create groups and invite other users to your groups. Chat in real time, or post a message/video/image and come back later to check responses.',
                 tech: 'My official Personal Project while at <a href="https://devmounta.in/" target="_blank">DevMountain</a> (completed course January 2016). Real time capability by Socket.io. Learned Socket.io outside of DevMountain curriculum. GroopScoop is built on Angular, Node, Express, Mongoose, and MongoDB.',
-                img_urls: ['/styles/assets/screenshots/gs/gs1.jpg', '/styles/assets/screenshots/gs/gs2.jpg'],
+                img_urls: ['/styles/assets/screenshots/gs/gs-1.jpg', '/styles/assets/screenshots/gs/gs1.jpg'],
                 built: 'December 2015'
             }
         }
